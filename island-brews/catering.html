@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Island Brews Coffee</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <h1 class="logo">Island Brews Coffee</h1>
+      <nav class="navigation">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="about.html">About</a></li>
+        <li class="nav-item"><a href="menu.html">Menu</a></li>
+        <li class="nav-item"><a href="contact.html">Contact</a></li>
+      </nav>
+    </header>
+    <form>
+      <h2>Catering Inquiry</h2>
+      <p>Planning an event? Let us bring the aloha to you!</p>
+
+      <fieldset>
+        <legend>Contact Information</legend>
+        <!-- Name and Email inputs go here -->
+         <label for="name">Contact Name:</label>
+         <input type="text" name="name" required>
+
+         <label for="email">Email:</label>
+         <input type="email" name="email" required>
+      </fieldset>
+
+       <fieldset>
+          <label for="event">Event Type</label>
+          <select id="event" name="event" required>
+            <option value="">Select an event type</option>
+            <option value="corportate">Corportate meeting</option>
+            <option value="wedding">Wedding</option>
+            <option value="birthday">Birthday Party</option>
+            <option value="other">Other</option>
+          </select>
+        </fieldset>
+      
+       <fieldset>
+          <label for="date">Event Date</label>
+          <input type="date" id="date" name="date" required>
+        </fieldset>
+    
+       <fieldset>
+        <label for="information">Additional Event Details</label>
+        <textarea id="information" name="information" rows></textarea>
+
+        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+        <label for="newsletter">Sign me up for the Island Brews newsletter</label>
+        </fieldset>
+
+      <p>We will respond within 2 business days.</p>
+
+      <button type="submit">Submit Inquiry</button>
+    </form>
+
+    <footer class="site-footer">
+      <p class="copyright">© 2025 Island Brews Coffee</p>
+      <address class="contact-info">
+        123 Aloha Street, Honolulu, HI
+      </address>
+    </footer>
+  </body>
+</html>
