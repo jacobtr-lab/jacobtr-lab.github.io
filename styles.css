@@ -1,0 +1,81 @@
+/* Style Sheet for JTR Photography */
+/* 
+==============
+color scheme
+==============
+Primary Color:#B3BDC9
+Primary hover:#AED1EB
+Text:White
+Text muted:
+Background:#C9BFB3
+Border:
+ */
+*{
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  background-color:#C9BFB3;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+
+}
+
+#logo {
+  padding: 10px 10px;
+}
+
+/* ===========
+    typogrpahy
+  =============
+  */
+  h1, h2 {
+    line-height: 1.4;
+    color: white;
+    font: Georgia, serif;
+  }
+
+  h1 {font-size: 2rem;}
+  h2 { font-size: 1.5rem;}
+
+  p {
+    color: white;
+    font-size: 1.2rem;
+    margin: 8px 20px;
+  }
+  
+  img {
+    display: inline-block;
+    padding: 5px 5px;
+  }
+  /* 
+  ==========
+  Links 
+  ==========
+  */
+  a {
+     color:white;
+  }
+  a:hover,a:focus {
+    color: blue;
+  }
+
+  /* nav */
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  font-size:  1.8rem;
+  border-color: beige;
+}
