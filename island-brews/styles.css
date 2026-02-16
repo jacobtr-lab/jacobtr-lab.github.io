@@ -101,8 +101,9 @@ display: inline;
 
 /* TODO: Style nav links - padding, cream color for visibility on dark background */
 nav a {
-padding: 20px;
+padding: 10px;
 color: 	#FFFAF0;
+text-decoration: none;
 
 }
 
@@ -111,7 +112,6 @@ nav a:hover,
 nav a:focus {
 outline: 2px solid #8D6E63;
 }
-
 /* ===================
    Main Content
    =================== */
