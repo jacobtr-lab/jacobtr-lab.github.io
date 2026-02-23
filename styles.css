@@ -12,99 +12,135 @@ Border:
  */
 *{
   box-sizing: border-box;
-  font-size: 16px;
+  margin: 0;
+  padding: 0;
 }
 
-body {
-  background-color:#C9BFB3;
+html, body {
+  height: 100%;
+  background-color:#dbd4cd;
   margin: 0;
   font-family: Arial, sans-serif;
-  font-size: 1rem;
   line-height: 1.6;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
+main {
+  flex-grow: 1;
 }
 
 img {
   max-width: 100%;
   height: auto;
-  flex-shrink: 0;
+  display: inline-block;
+  padding: 5px 5px;
 }
 
 /* ===========
-    typogrpahy
+    typogrpahy/ base mobile style
   =============
   */
-  h1, h2 {
+#logo {
+  padding: 10px 10px;
+  width: 100px;
+}
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  h1, h2, h3 {
     line-height: 1.4;
-    color: white;
+    color: rgb(0, 0, 0);
     font: Georgia, serif;
     margin: 15px;
+    text-align: center;
   }
 
-  h1 {font-size: 2rem;}
+  h1 { font-size: 2.3rem;}
   h2 { font-size: 1.5rem;}
+  h3 { font-size: 1.2rem;}
 
   p {
-    color: white;
-    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
     margin: 8px 20px;
   }
+
+
   
-  img {
-    display: inline-block;
-    padding: 5px 5px;
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    
   }
+
   /* 
   ==========
   Links 
   ==========
   */
   a {
-     color:white;
+     color:rgb(0, 0, 0);
      text-decoration: none;
+     font-size: 2rem;
+     text-decoration: underline;
   }
   a:hover,a:focus {
-    color: brown;
+    color: rgb(104, 153, 222);
+    text-decoration: underline;
   }
 
   /* nav */
 nav ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   list-style: none;
   padding: 0;
-  display: flex;
   gap: 24px;
 }
 
 nav a {
   font-family: Arial, Helvetica, sans-serif;
-  padding: 20px;
-  font-size:  1.3rem;
-  border: 1 solid beige;
+  padding: 8px 12px;
+  font-size:  1.5rem;
+  border: 1 solid rgb(0, 0, 0);
   text-decoration: none;
 }
 
 /* Layouts */
 
-#logo {
-  padding: 10px 10px;
-}
 
-header {
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
-}
     /* My gallery page */
 #Gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-align-items: center;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
 }
-
+.gallery-item {
+  border-radius: 14px;
+  object-fit:contain;
+}
 /* About me page */
 #selfportrait {
-  border-radius: 400px;
+  border-radius: 300px;
+  width: 40vh;
 }
 .about{
   display: flex;
@@ -118,4 +154,38 @@ form {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
+  color: rgb(0, 0, 0);
+}
+
+/* Navigation styles */
+
+/* Tablet (768px and up) */
+@media (min-width: 768px){
+  header {
+    flex-direction: row;
+    justify-content:flex-start;
+    padding: 16px 24px;
+  }
+  
+  nav ul {
+    flex-direction: row;
+  }
+
+  .gallery-item {
+    flex-basis: 300px;
+  }
+}
+
+/* Desktop (1024px and up) */
+@media (min-width: 1024px) {
+  nav ul {
+    gap: 24px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+p, a {
+  font-size: 1.25rem;
+}
 }
