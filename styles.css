@@ -3,11 +3,11 @@
 ==============
 color scheme
 ==============
-Primary Color:#B3BDC9
+Primary Color:#dbd4cd
+Secondary: rgb(163, 163, 133)
 Primary hover:rgb(104, 153, 222)
 Text:black
 Text muted:light grey
-Background:#dbd4cd
 Border:solid azure
 */
 
@@ -66,7 +66,7 @@ footer {
   h1, h2, h3 {
     line-height: 1.4;
     color: rgb(0, 0, 0);
-    font: Georgia, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 15px;
     text-align: center;
   }
@@ -110,7 +110,6 @@ nav a {
   font-family: Arial, Helvetica, sans-serif;
   padding: 8px 12px;
   font-size:  1.5rem;
-  border: 1 solid rgb(0, 0, 0);
   text-decoration: none;
 }
 
@@ -129,7 +128,7 @@ nav a {
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.3rem;
-  background-color: azure;
+  background-color: rgb(163, 163, 133);
 }
 
     /* My gallery page */
@@ -180,7 +179,7 @@ form {
   display: flex;
   flex-direction: column;
   border: 2px solid rgb(0, 0, 0);
-  background-color: azure;
+  background-color: rgb(163, 163, 133);
 }
 
 
