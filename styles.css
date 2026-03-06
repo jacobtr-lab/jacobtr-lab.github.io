@@ -162,6 +162,24 @@ nav a {
   align-items: center;
 }
 
+article {
+  margin: 20px 10px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: azure;
+}
+
+article ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  margin: 8px 20px;
+}
+
   /*Contact Page  */
 form {
   display: flex;
@@ -205,7 +223,6 @@ button {
 
 /* Tablet (768px and up) */
 @media (min-width: 768px){
-  }
   .container {
     max-width: 720px;
   }
@@ -227,6 +244,13 @@ button {
     flex-basis: 300px;
   }
 
+  article h2{ 
+    font-size: 2rem;
+  }
+  article ul{
+font-size: 1.3rem;
+  }
+}
 
 /* Desktop (1024px and up) */
 @media (min-width: 1024px) {
@@ -240,7 +264,7 @@ button {
   h1 {
     font-size: 3rem;
   }
-p, a {
+p, a, article ul {
   font-size: 1.25rem;
 }
 }
